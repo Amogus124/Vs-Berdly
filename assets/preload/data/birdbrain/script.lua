@@ -19,17 +19,3 @@ function opponentNoteHit()
 		setProperty('health', health+ 0.02)
 	end
 end
-
-function onCreatePost()
-    makeLuaText("message", "Ported by Dxgamer", 500, 30, 50)
-    setTextAlignment("message", "left")
-    addLuaText("message")
-    makeLuaText("engineText", "- Psych Engine -", 500, 30, 30)
-    setTextAlignment("engineText", "left")
-    addLuaText("engineText")
-	
-	if getPropertyFromClass('ClientPrefs', 'downScroll') == false then
-        setProperty('message.y', 680)
-        setProperty('engineText.y', 660)
-    end
-end
